@@ -1,8 +1,1 @@
-pandas==2.2.2
-numpy==2.0.2
-gdown==5.2.1
-chromadb==1.5.7
-sentence-transformers==5.3.0
-torch==2.10.0+cu128
-streamlit==1.56.0
-google-colab==1.0.0
+streamlit
