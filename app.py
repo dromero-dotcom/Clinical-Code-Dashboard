@@ -89,7 +89,7 @@ for index, item in enumerate(st.session_state.audit_data):
             st.write("") # Spacer
 
             # Action buttons
-            btn_col1, btn_col2, btn_col3 = st.columns(3)
+            btn_col1, btn_col2 = st.columns(2)
             with btn_col1:
                 if st.button("Approve", key=f"app_{index}", use_container_width=True):
                     st.session_state.audit_data[index]['status'] = 'Approved'
@@ -98,9 +98,5 @@ for index, item in enumerate(st.session_state.audit_data):
                 if st.button("Reject", key=f"rej_{index}", use_container_width=True):
                     st.session_state.audit_data[index]['status'] = 'Rejected'
                     st.rerun()
-            with btn_col3:
-                if st.button("Pending", key=f"rej_{index}", use_container_width=True):
-                    st.session_state.audit_data[index]['status'] = 'Pending'
-                    st.rerun()
-        
+                
         st.divider()
