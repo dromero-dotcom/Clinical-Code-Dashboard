@@ -42,7 +42,7 @@
         "Year": "2024",
         "Reference_Set": "PCD Refset",
         "Type": "disorder",
-        "Is_Ambiguous": true,
+        "Is_Ambiguous": false,
         "Embedding_Model": "all-MiniLM-L6-v2",
         "status": "Pending",
         "analyst_notes": ""
